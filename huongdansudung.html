@@ -206,5 +206,16 @@
         </div>
         <button class="back-button" onclick="window.location.href='index.html'">Quay Lại Trang Chính</button>
     </div>
+    <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">⬆</button>
+    <script>
+        window.onscroll = function() {
+            let btn = document.querySelector('.scroll-top');
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                btn.classList.add('show');
+            } else {
+                btn.classList.remove('show');
+            }
+        };
+    </script>
 </body>
 </html>
