@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Tin Đặt Căn Hộ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #003087, #0071e3, #00aaff);
+            color: white;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent);
+            opacity: 0.3;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: relative;
+            z-index: 1;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+            margin-top: 0.5rem;
+            animation: fadeInUp 1s ease-in-out 0.3s both;
+        }
+
+        /* Navigation Container */
+        .nav-container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 0 2rem;
+        }
+
+        .nav-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .nav-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #0071e3, #00aaff);
+            transition: height 0.3s ease;
+        }
+
+        .nav-card:hover::after {
+            height: 8px;
+        }
+
+        .nav-card h3 {
+            color: #003087;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .nav-card p {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        /* Animation Keyframes */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: #003087;
+            color: white;
+            font-size: 0.9rem;
+            margin-top: 3rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .nav-container {
+                grid-template-columns: 1fr;
+                padding: 0 1rem;
+            }
+
+            .nav-card {
+                padding: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .nav-card h3 {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Trang Chính -->
+    <header>
+        <h1>Thông Tin Đặt Căn Hộ</h1>
+        <p>Chào mừng quý khách! Khám phá thông tin cần thiết cho trải nghiệm căn hộ hoàn hảo.</p>
+    </header>
+    <div class="nav-container">
+        <div class="nav-card" onclick="window.location.href='cachcheckin.html'">
+            <h3>Cách Check In</h3>
+            <p>Tìm hiểu các bước đơn giản để nhận căn hộ của bạn nhanh chóng.</p>
+        </div>
+        <div class="nav-card" onclick="window.location.href='huongdansudung.html'">
+            <h3>Hướng Dẫn Sử Dụng</h3>
+            <p>Hướng dẫn chi tiết về wifi, điều hòa, bếp và các tiện ích khác.</p>
+        </div>
+        <div class="nav-card" onclick="window.location.href='noiquy.html'">
+            <h3>Nội Quy Căn Hộ</h3>
+            <p>Quy định để đảm bảo an toàn và thoải mái cho kỳ nghỉ của bạn.</p>
+        </div>
+    </div>
+    <footer>
+        <p>© 2025 Căn Hộ Của Sự Bình Yên | Liên hệ: 0909-123-456</p>
+    </footer>
+</body>
+</html>
