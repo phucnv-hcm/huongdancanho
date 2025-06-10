@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng Dẫn Cách Nhận Phòng</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #003087, #0071e3, #00aaff);
+            color: white;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent);
+            opacity: 0.3;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            position: relative;
+            z-index: 1;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        /* Content Styles */
+        .content {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            color: #003087;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        /* Section Styles with Sequential Flow */
+        .section {
+            margin-bottom: 2.5rem;
+            position: relative;
+            padding: 1.5rem;
+            border-left: 4px solid #0071e3;
+            background: #f9fbfc;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateX(5px);
+        }
+
+        .section::before {
+            content: attr(data-step);
+            position: absolute;
+            top: -1rem;
+            left: -1rem;
+            background: #0071e3;
+            color: white;
+            width: 2rem;
+            height: 2rem;
+            line-height: 2rem;
+            text-align: center;
+            border-radius: 50%;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .section h3 {
+            color: #003087;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .section p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            color: #555;
+        }
+
+        /* Media Styles */
+        .media-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        video, img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .caption {
+            font-size: 0.9rem;
+            color: #666;
+            text-align: center;
+            margin-top: 0.5rem;
+        }
+
+        /* Back Button */
+        .back-button {
+            background-color: #ff6200;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            display: block;
+            margin: 2rem auto;
+        }
+
+        .back-button:hover {
+            background-color: #e65500;
+            transform: translateY(-2px);
+        }
+
+        /* Animation Keyframes */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .content {
+                padding: 1.5rem;
+            }
+
+            .section h3 {
+                font-size: 1.3rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.6rem;
+            }
+
+            .content {
+                margin: 1rem;
+                padding: 1rem;
+            }
+
+            .section {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hướng Dẫn Cách Nhận Phòng</h1>
+    </header>
+    <div class="content">
+        <h2>Các Bước Nhận Căn Hộ</h2>
+        <div class="section" data-step="1">
+            <h3>Hướng Dẫn Hướng Vào Lễ Tân</h3>
+            <p>Tìm sảnh lễ tân Altara Residences để gặp lễ tân hoặc bảo vệ để nhận thẻ.</p>
+            <p>Cung cấp tên và số thẻ cho lễ tân hoặc bảo vệ để nhận thẻ.Nếu bảo vệ hoặc lễ tân thông báo chưa nhận thông tin.Bạn hãy vui lòng gọi điện thoại 0934.956.358 (TRANG) Hoặc 0796.719.039 (PHUC)</p>
+            <div class="media-container">
+                <img src="https://drive.google.com/file/d/16vKjBFeDCFBKtwCDI1SD9O8SPcwrRxCj/view?usp=drive_link" alt="Hướng vào sảnh lễ tân">
+                <img src="https://drive.google.com/file/d/1RIJoPqkjXqxn0Tf5PnZrmhzl4V2jJvDY/view?usp=drive_link" alt="Vị trí cửa vào lễ tân">
+                <img src="https://drive.google.com/file/d/1k18euybj1gwDBoSCwKuRyScZdbLpW_EM/view?usp=drive_link" alt="Sảnh lễ tân">
+                <div class="caption">Hình ảnh: Gặp lễ tân hoặc bảo vệ tại sảnh lễ tân để nhận thẻ</div>
+            </div>
+        </div>
+        <div class="section" data-step="2">
+            <h3>Hướng Dẫn Thẻ Đi Thang Máy</h3>
+            <p>Quẹt thẻ tại đầu đọc bên ngoài thang máy để kích hoạt nút bấm tầng.</p>
+            <p>Số tầng chính là những chữ số đầu của thẻ ví dụ: Đối với thẻ 3 chữ số thì số đầu tiên là số tầng.Đối với thẻ 4 chữ số thì hai số đầu tiên là số tầng</p>
+            <p>Số thẻ là 602 thì số tầng là 6.Số thẻ là 2701 thì số tầng là 27.</p>
+            <div class="media-container">
+                <img src="https://drive.google.com/file/d/14tvahDjtGH1WrWwiFWjvCgi0eSDWLugI/view?usp=drive_link" alt="Cách quẹt thẻ thang máy">
+                <div class="caption">Hình ảnh: Nơi quẹt thẻ thang máy.</div>
+            </div>
+        </div>
+        <div class="section" data-step="3">
+            <h3>Hướng Dẫn Vào Căn Hộ</h3>
+            <p>Đưa thẻ vào khe đọc ở cửa, chờ đèn xanh và xoay tay nắm để mở.</p>
+            <div class="media-container">
+                <img src="https://drive.google.com/file/d/1OIz-Jsw7tLn0A2yaw6JBagDwkN2-Nx-Q/view?usp=drive_link" alt="Cách mở cửa căn hộ">
+                <div class="caption">Hình ảnh: Mở cửa căn hộ.</div>
+            </div>
+        </div>
+        <div class="section" data-step="4">
+            <h3>Hướng Dẫn Mở Tủ Điện</h3>
+            <p>Tủ điện nằm ở hành lang, xoay chốt và mở cửa tủ để kiểm tra cầu dao.</p>
+            <div class="media-container">
+                <img src="https://drive.google.com/file/d/1HI0r7XBPhho8vNvJtVLxWBKqoB8F65X8/view?usp=drive_link" alt="Cách mở tủ điện">
+                <div class="caption">Hình ảnh: Vị trí tủ điện ở vị trí phía trên nơi để dép của căn hộ.</div>
+                <img src="https://drive.google.com/file/d/1h3QuItNilR3XfCqavc0lSefMsKi3CB8i/view?usp=drive_link" alt="Vị trí tủ điện">
+                <div class="caption">Hình ảnh: Mở hộp điện màu xám.</div>
+                <img src="https://drive.google.com/file/d/1b8lAoBjh7AdD9wbSnvUUq-ZczKfZ2cfG/view?usp=drive_link" alt="Mở công tắc tổng.">
+                <div class="caption">Hình ảnh: Mở công tắc tổng để sử dụng điện.</div>
+            </div>
+        </div>
+        <div class="section" data-step="5">
+            <h3>Hướng Dẫn Mở Nước Nóng</h3>
+            <p>Bật công tắc máy nước nóng trong phòng tắm, chờ 10-15 phút.</p>
+            <div class="media-container">
+                <img src="https://drive.google.com/file/d/18w_kepLgIg5j1IXdI3ysHZFKdaWBFuLt/view?usp=drive_link" alt="Công tắc nước nóng">
+                <div class="caption">Hình ảnh: Vị trí công tắc máy nước nóng.</div>
+            </div>
+        </div>
+        <div class="section" data-step="6">
+            <h3>Hướng Dẫn Đổ Rác</h3>
+            <p>Hãy đổ rác đúng vị trí đã hướng dẫn.</p>
+            <div class="media-container">
+                <img src="https://drive.google.com/file/d/10Fd9DRKvxflFakct-yNRrCzhbaVfYXqo/view?usp=drive_link" alt="Phòng rác mỗi tầng">
+                <div class="caption">Hình ảnh: Vị trí phòng rác.</div>
+            </div>
+        </div>
+        <button class="back-button" onclick="window.location.href='index.html'">Quay Lại Trang Chính</button>
+    </div>
+</body>
+</html>
